@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hello, I am Nisha</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3, #a18cd1);
+        }
+
+        .card {
+            padding: 40px 25px;
+            margin: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 38px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        button {
+            padding: 14px 25px;
+            border: none;
+            border-radius: 25px;
+            background: white;
+            color: #e84393;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ffe0ef;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>💖 HELLO, I AM NISHA 💖</h1>
+
+        <p>Welcome to my website!</p>
+
+        <p>✨ Be happy. Be yourself. ✨</p>
+
+        <button onclick="showMessage()">Click Me!</button>
+
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "Thank you for visiting my website! ❤️";
+        }
+    </script>
+
+</body>
+</html>
